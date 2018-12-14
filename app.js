@@ -19,8 +19,8 @@ const music = new Music(client, {
     helpCmd: 'mhelp',
     leaveCmd: 'begone',
     ownerOverMember: true,
-    botOwner: '123456789101112',
-    youtubeKey: 'AIzaSyBGxbK035bxei_yCzoB97koBjNSa-ebHJs'
+    botOwner: '',
+    youtubeKey: ''
 });
 client.on("message", message => {
     if (message.content == "ping") {
@@ -89,7 +89,7 @@ client.on("message", message => {
         });
     }
     if(!message.guild) {
-        message.reply("뭐이 씨발아 ");
+        message.reply("Test");
     }
     if(message.content === '@voiceout') {
         if(message.member.voiceChannel) {
@@ -115,5 +115,5 @@ client.on("message", message => {
     }
 });
       
-//bot.setYoutubeKey('AIzaSyBGxbK035bxei_yCzoB97koBjNSa-ebHJs');
-client.login("NDMyODA4Nzk2NDI3OTExMTY5.DaysNw.MEtg2abG3QTqFxdXJe7bJLNo7O4");
+
+client.login("");
