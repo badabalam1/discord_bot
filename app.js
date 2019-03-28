@@ -21,8 +21,13 @@ const music = new Music(client, {
     helpCmd: 'mhelp',
     leaveCmd: 'begone',
     ownerOverMember: true,
+<<<<<<< HEAD
     botOwner: '123456789101112',
     youtubeKey: Key
+=======
+    botOwner: '',
+    youtubeKey: ''
+>>>>>>> 721e2af89318d091b91182a7910e5da8aec5cc19
 });
 client.on("message", message => {
     if (message.content == "@명령어") {
@@ -89,6 +94,7 @@ client.on("message", message => {
             }
         });
     }
+<<<<<<< HEAD
 
     if (message.content === "@CGV") {
         let url = 'http://www.cgv.co.kr/movies/';
@@ -158,6 +164,10 @@ client.on("message", message => {
                 message.reply(CGV);
             }
         })
+=======
+    if(!message.guild) {
+        message.reply("Test");
+>>>>>>> 721e2af89318d091b91182a7910e5da8aec5cc19
     }
 
     if (message.content === '@롯데시네마') {
@@ -222,6 +232,12 @@ client.on("message", message => {
         }
     }
 });
+<<<<<<< HEAD
 
 // bot.setYoutubeKey('AIzaSyBGxbK035bxei_yCzoB97koBjNSa-ebHJs');
 client.login(botToKen);
+=======
+      
+
+client.login("");
+>>>>>>> 721e2af89318d091b91182a7910e5da8aec5cc19
